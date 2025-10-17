@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 - Page Not Found</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .neon-glow {
+      text-shadow: 0 0 7px rgba(52, 211, 163, 0.7),
+        0 0 10px rgba(52, 211, 163, 0.5),
+        0 0 21px rgba(52, 211, 163, 0.3);
+      animation: pulse 4s infinite alternate;
+    }
+
+    @keyframes pulse {
+      from {
+        opacity: 0.9;
+        transform: scale(1.0);
+      }
+
+      to {
+        opacity: 1.0;
+        transform: scale(1.02);
+      }
+    }
+  </style>
+</head>
+
+<body class="bg-gray-100 font-sans antialiased">
+  <div class="min-h-screen flex flex-col items-center justify-center p-4 text-center">
+    <h1 class="text-9xl font-extrabold  text-[#007bff] mb-4 tracking-widest uppercase [#007bff]-glow sm:text-[10rem]">
+      404
+    </h1>
+    <h2 class="text-3xl font-light text-black mb-6 tracking-wider sm:text-4xl">
+      Signal Lost in the Digital Void
+    </h2>
+    <p class="text-lg text-gray-600 max-w-xl mb-10 leading-relaxed">
+      The requested resource has either been moved, deleted, or never existed in this timeline. Don't panic—the rest of
+      our site is perfectly secure.
+    </p>
+    <div class="space-y-4 sm:space-y-0 sm:space-x-6 sm:flex">
+      <a href="/"
+        class="inline-block px-8 py-3 bg-[#007bff] text-white font-semibold rounded-lg shadow-lg hover:bg-teal-500 transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-teal-400 focus:ring-opacity-50 w-full sm:w-auto">
+        Return to Base Command
+      </a>
+    </div>
+  </div>
+</body>
+
+</html>
