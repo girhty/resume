@@ -1,6 +1,6 @@
-FROM alpine:latest
+FROM nginx:latest
 WORKDIR /app
 COPY . .
-RUN apk add --update --no-cache nginx 
+COPY ./defult.conf /etc/nginx/conf.d/
 EXPOSE 8080
-CMD mv ./defult.conf /etc/nginx/conf.d/ && nginx -g "damean off;"
+CMD ["nginx","-g", "daemon off;"]
